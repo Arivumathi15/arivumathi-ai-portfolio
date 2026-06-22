@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Arivumathi M R | Data Scientist &mdash; AI &amp; GenAI</title>
+<meta name="description" content="Portfolio of Arivumathi M R, Data Scientist specializing in AI, GenAI, LLM applications and automation." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+<script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+
+<div id="progress-bar"></div>
+
+<!-- NAV -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="#home" class="logo">AM<span class="logo-dot">.</span></a>
+    <ul class="nav-links">
+      <li><a href="#home" class="nav-link active" data-section="home">Home</a></li>
+      <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+      <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+      <li><a href="#experience" class="nav-link" data-section="experience">Experience</a></li>
+      <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
+      <li><a href="#education" class="nav-link" data-section="education">Education</a></li>
+      <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+    </ul>
+    <a href="assets/Arivumathi_MR_Resume.pdf" class="btn btn-sm btn-primary nav-cta" download>Resume <i class="fa-solid fa-arrow-down"></i></a>
+    <button id="navToggle" aria-label="Toggle menu"><i class="fa-solid fa-bars"></i></button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero" id="home">
+  <div class="hero-bg">
+    <span class="blob blob-1"></span>
+    <span class="blob blob-2"></span>
+    <span class="blob blob-3"></span>
+    <div class="grid-overlay"></div>
+  </div>
+
+  <div class="hero-content container">
+    <p class="hero-greeting" data-reveal>Hi, I'm</p>
+    <h1 class="hero-name" data-reveal>Arivumathi&nbsp;M&nbsp;R</h1>
+    <h2 class="hero-role" data-reveal>
+      <span id="typed"></span><span class="cursor">|</span>
+    </h2>
+    <p class="hero-summary" data-reveal>
+      Data Scientist with 2+ years of experience building end-to-end AI &amp; LLM applications &mdash;
+      from RAG pipelines and intelligent automation to production-grade APIs. I turn business problems
+      into scalable, measurable AI solutions.
+    </p>
+    <div class="hero-actions" data-reveal>
+      <a href="#projects" class="btn btn-primary">View My Work <i class="fa-solid fa-arrow-right"></i></a>
+      <a href="assets/Arivumathi_MR_Resume.pdf" class="btn btn-outline" download>
+        <i class="fa-solid fa-arrow-down"></i> Download Resume
+      </a>
+    </div>
+
+    <div class="hero-stats" data-reveal>
+      <div class="stat">
+        <span class="stat-num" data-count="2">0</span><span class="stat-suffix">+</span>
+        <span class="stat-label">Years Experience</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num" data-count="8">0</span><span class="stat-suffix">+</span>
+        <span class="stat-label">AI Projects Shipped</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num" data-count="6">0</span><span class="stat-suffix">+</span>
+        <span class="stat-label">Certifications</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num" data-count="1">0</span>
+        <span class="stat-label">Company Founded</span>
+      </div>
+    </div>
+  </div>
+
+  <a href="#about" class="scroll-cue" aria-label="Scroll down">
+    <span></span>
+  </a>
+</header>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+  <div class="container about-grid">
+    <div class="about-text" data-reveal>
+      <p class="eyebrow">About Me</p>
+      <h2 class="section-title">Solving real problems with data, AI &amp; automation</h2>
+      <p>
+        Dedicated and versatile Data Scientist specializing in AI, GenAI and Large Language Model (LLM)
+        applications. I build end-to-end AI pipelines using OpenAI, LangChain, FastAPI and PostgreSQL,
+        with strong expertise in embeddings, RAG architectures, and intelligent automation via n8n.
+      </p>
+      <p>
+        Beyond my role as a Data Scientist, I founded <strong>SkillEdge Coaching</strong>, an online
+        education and coaching venture &mdash; combining my passion for teaching with practical,
+        industry-aligned curriculum design.
+      </p>
+      <div class="about-info">
+        <div><i class="fa-solid fa-location-dot"></i> Chennai, Tamil Nadu, India</div>
+        <div><i class="fa-solid fa-briefcase"></i> Data Scientist @ EDL Technologies</div>
+        <div><i class="fa-solid fa-graduation-cap"></i> M.Sc. Data Science &amp; Business Analysis</div>
+      </div>
+    </div>
+
+    <div class="about-visual" data-reveal>
+      <div class="orbit-wrap">
+        <div class="orbit-core"><img src="assets/profile.jpeg" alt="Arivumathi M R"></div>
+        <div class="orbit-ring ring-1">
+          <span class="orbit-icon" style="--angle:0deg"><i class="fa-brands fa-python"></i></span>
+          <span class="orbit-icon" style="--angle:120deg"><i class="fa-solid fa-database"></i></span>
+          <span class="orbit-icon" style="--angle:240deg"><i class="fa-solid fa-robot"></i></span>
+        </div>
+        <div class="orbit-ring ring-2">
+          <span class="orbit-icon" style="--angle:60deg"><i class="fa-brands fa-docker"></i></span>
+          <span class="orbit-icon" style="--angle:180deg"><i class="fa-solid fa-link"></i></span>
+          <span class="orbit-icon" style="--angle:300deg"><i class="fa-solid fa-chart-line"></i></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="section section-alt">
+  <div class="container">
+    <p class="eyebrow" data-reveal>What I Work With</p>
+    <h2 class="section-title" data-reveal>Skills &amp; Toolbox</h2>
+
+    <div class="skills-grid" data-reveal>
+      <div class="skill-card">
+        <div class="skill-icon"><i class="fa-brands fa-python"></i></div>
+        <h3>Programming</h3>
+        <div class="tags">
+          <span>Python</span><span>NumPy</span><span>Pandas</span><span>SciPy</span><span>Scikit-Learn</span><span>Transformers</span><span>OOP</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon"><i class="fa-solid fa-brain"></i></div>
+        <h3>AI &amp; LLM</h3>
+        <div class="tags">
+          <span>GPT</span><span>LLaMA</span><span>LangChain</span><span>RAG</span><span>Embeddings</span><span>Prompt Engineering</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon"><i class="fa-solid fa-database"></i></div>
+        <h3>Databases</h3>
+        <div class="tags">
+          <span>PostgreSQL</span><span>MySQL</span><span>ElasticSearch</span><span>VectorDB</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon"><i class="fa-solid fa-layer-group"></i></div>
+        <h3>Frameworks</h3>
+        <div class="tags">
+          <span>FastAPI</span><span>Flask</span><span>Streamlit</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon"><i class="fa-solid fa-gears"></i></div>
+        <h3>DevOps &amp; Automation</h3>
+        <div class="tags">
+          <span>Git</span><span>Docker</span><span>n8n</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon"><i class="fa-solid fa-chart-pie"></i></div>
+        <h3>Visualization</h3>
+        <div class="tags">
+          <span>Power BI</span><span>Tableau</span><span>Advanced Excel</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience" class="section">
+  <div class="container">
+    <p class="eyebrow" data-reveal>Career Journey</p>
+    <h2 class="section-title" data-reveal>Experience</h2>
+
+    <div class="timeline">
+      <div class="timeline-item" data-reveal>
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <span class="timeline-date">May 2024 &mdash; Present</span>
+          <h3>Data Scientist &mdash; GenAI</h3>
+          <p class="timeline-org">EDL Technologies Pvt Ltd, Chennai</p>
+          <ul>
+            <li>Built end-to-end GenAI &amp; LLM applications using OpenAI, LangChain and embeddings for text processing and intelligent retrieval.</li>
+            <li>Designed RAG pipelines for structured knowledge extraction and domain-specific workflows.</li>
+            <li>Deployed production-grade APIs with FastAPI and Docker; optimized PostgreSQL for large datasets.</li>
+            <li>Migrated a six-agent sales-automation pipeline (n8n + NATS JetStream) from a single-tenant prototype to a multi-tenant platform, redesigning the messaging topology and resolving a cross-agent data-loss bug.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item" data-reveal>
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <span class="timeline-date">Aug 2024 &mdash; Present</span>
+          <h3>CEO &amp; Founder</h3>
+          <p class="timeline-org">SkillEdge Coaching, Chennai</p>
+          <ul>
+            <li>Founded an online education &amp; coaching platform empowering learners through modern coaching.</li>
+            <li>Built and launched the brand's live web presence &mdash;
+              <a href="https://skilledge-coaching.vercel.app/" target="_blank" rel="noopener">skilledge-coaching.vercel.app <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item" data-reveal>
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <span class="timeline-date">Jan 2024 &mdash; Apr 2024</span>
+          <h3>Data Science Trainer</h3>
+          <p class="timeline-org">iNurture Edu Tech Solutions, Chennai</p>
+          <ul>
+            <li>Delivered Data Science, Python, SQL and ML curriculum to BCA students.</li>
+            <li>Ran hands-on sessions on preprocessing, visualization, and model development; mentored students in real-time problem-solving.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item" data-reveal>
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <span class="timeline-date">Oct 2023 &mdash; Mar 2024</span>
+          <h3>Data Science Intern</h3>
+          <p class="timeline-org">Besant Technologies, Chennai</p>
+          <ul>
+            <li>Gained hands-on experience in Python, MySQL, Advanced Excel and Power BI.</li>
+            <li>Assisted in building ML models and data pipelines; contributed to dashboards and business reporting.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section section-alt">
+  <div class="container">
+    <p class="eyebrow" data-reveal>Selected Work</p>
+    <h2 class="section-title" data-reveal>Projects</h2>
+
+    <div class="projects-grid">
+      <article class="project-card featured wide" data-reveal>
+        <div class="project-top">
+          <span class="project-tag">Featured &middot; Current Project</span>
+          <i class="fa-solid fa-diagram-project project-glyph"></i>
+        </div>
+        <h3>Multi-Agent AI Sales Pipeline &mdash; Multi-Tenant Migration</h3>
+        <p>
+          Led the migration of a production multi-agent sales-automation pipeline from a single-tenant
+          prototype to a multi-tenant platform. Six cooperating agents (Universal, Dispatch, Action,
+          Reasoning, Memory, Event Logger) coordinate over NATS JetStream; I redesigned the messaging
+          topology to carry a full tenant identity through every hop, then root-caused a cross-agent bug
+          that was silently dropping tenant identifiers mid-chain &mdash; restoring end-to-end propagation
+          without touching the core decision logic. Validated the rebuilt platform end-to-end with a
+          Postman test suite against the live message bus.
+        </p>
+        <div class="tags"><span>n8n</span><span>NATS JetStream</span><span>Multi-Agent Systems</span><span>LLM</span><span>Postman</span></div>
+      </article>
+
+      <article class="project-card featured" data-reveal>
+        <div class="project-top">
+          <span class="project-tag">Featured &middot; Live Site</span>
+          <i class="fa-solid fa-rocket project-glyph"></i>
+        </div>
+        <h3>SkillEdge Coaching</h3>
+        <p>Founded and built the web presence for an online education &amp; coaching platform &mdash; empowering learners' journeys through modern coaching.</p>
+        <div class="tags"><span>Founder</span><span>Education</span><span>Web</span></div>
+        <a href="https://skilledge-coaching.vercel.app/" target="_blank" rel="noopener" class="project-link">
+          Visit Site <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </a>
+      </article>
+
+      <article class="project-card featured" data-reveal>
+        <div class="project-top">
+          <span class="project-tag">Featured &middot; GenAI</span>
+          <i class="fa-solid fa-images project-glyph"></i>
+        </div>
+        <h3>DocMind &mdash; Multi-PDF Conversational AI Assistant</h3>
+        <p>
+          Conversational RAG assistant for chatting across multiple PDFs at once, with per-document
+          memory, streaming answers and source-aware citations powered by semantic search over FAISS.
+          Built a Vision RAG pipeline that extracts images and charts from PDFs, describes them with
+          Gemini Vision, embeds the descriptions in FAISS, and automatically retrieves and explains the
+          right image when asked (e.g. &ldquo;explain the ROC curve&rdquo;).
+        </p>
+        <div class="tags"><span>LangChain</span><span>Gemini Vision</span><span>FAISS</span><span>RAG</span><span>Streamlit</span></div>
+        <a href="https://lnkd.in/gFv5FgQF" target="_blank" rel="noopener" class="project-link">
+          View Repo <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </a>
+      </article>
+
+      <article class="project-card" data-reveal>
+        <i class="fa-solid fa-newspaper project-glyph"></i>
+        <h3>IntelliNews AI</h3>
+        <p>Advanced news summarization platform that fetches, processes and condenses articles into concise audio summaries.</p>
+        <div class="tags"><span>LLM</span><span>Tavily Search</span><span>gTTS</span></div>
+        <a href="https://www.linkedin.com/posts/arivumathimr_aiprojects-pythondeveloper-generativeai-activity-7391503988778557440-0hRo" target="_blank" rel="noopener" class="project-link">
+          View Post <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </a>
+      </article>
+
+      <article class="project-card" data-reveal>
+        <i class="fa-solid fa-users-gear project-glyph"></i>
+        <h3>News Summarization &mdash; Agentic AI</h3>
+        <p>Automated web-scraping and summarization workflow using Crew AI agents and Tavily Search for structured content extraction.</p>
+        <div class="tags"><span>Crew AI</span><span>Agents</span><span>Tavily</span></div>
+      </article>
+
+      <article class="project-card" data-reveal>
+        <i class="fa-solid fa-file-pdf project-glyph"></i>
+        <h3>Chat with PDF</h3>
+        <p>Interactive PDF chatbot enabling document querying, semantic search and context-aware responses over uploaded files.</p>
+        <div class="tags"><span>LangChain</span><span>Embeddings</span><span>Streamlit</span></div>
+      </article>
+
+      <article class="project-card" data-reveal>
+        <i class="fa-solid fa-table-cells project-glyph"></i>
+        <h3>Generic Excel Data Analysis App</h3>
+        <p>Tool for interacting with multiple CSV files &mdash; automated processing, summarization and AI-assisted insight generation.</p>
+        <div class="tags"><span>PandasAI</span><span>Streamlit</span></div>
+      </article>
+
+      <article class="project-card" data-reveal>
+        <i class="fa-solid fa-chart-column project-glyph"></i>
+        <h3>Adventure Works Car Analysis</h3>
+        <p>Interactive Power BI dashboard analyzing car ownership trends by education, income and marital status.</p>
+        <div class="tags"><span>Power BI</span><span>KPI Tracking</span></div>
+        <a href="https://www.linkedin.com/posts/arivumathimr_powerbi-dataanalytics-dashboarddesign-activity-7289873711145381888-uE-c" target="_blank" rel="noopener" class="project-link">
+          View Post <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION & CERTS -->
+<section id="education" class="section">
+  <div class="container edu-grid">
+    <div data-reveal>
+      <p class="eyebrow">Academics</p>
+      <h2 class="section-title">Education</h2>
+      <div class="edu-item">
+        <h3>M.Sc. Data Science &amp; Business Analysis</h3>
+        <p class="timeline-org">Bharathiyar University, Coimbatore</p>
+        <span class="timeline-date">2021 &mdash; 2023 &middot; 91%</span>
+      </div>
+      <div class="edu-item">
+        <h3>B.Sc. Mathematics</h3>
+        <p class="timeline-org">Bharathidasan University, Nagapattinam</p>
+        <span class="timeline-date">2018 &mdash; 2021 &middot; 90%</span>
+      </div>
+
+      <p class="eyebrow" style="margin-top:2.5rem">Recognition</p>
+      <ul class="achievement-list">
+        <li><i class="fa-solid fa-award"></i> Outstanding Student Award (2023) for academic excellence &amp; project contributions</li>
+        <li><i class="fa-solid fa-award"></i> IEEE project competition achievement certificate</li>
+        <li><i class="fa-solid fa-award"></i> Selected for MSME IDEAHACKATHON 2022 (Incubation Scheme)</li>
+        <li><i class="fa-solid fa-award"></i> Published research paper, International Journal of Scientific Research in Engineering &amp; Management</li>
+      </ul>
+    </div>
+
+    <div data-reveal>
+      <p class="eyebrow">Credentials</p>
+      <h2 class="section-title">Certifications</h2>
+      <div class="cert-list">
+        <div class="cert-item"><i class="fa-solid fa-certificate"></i> Google Data Analytics Professional Certificate &mdash; Coursera</div>
+        <div class="cert-item"><i class="fa-solid fa-certificate"></i> Power BI Job Simulation &mdash; PwC Switzerland (Forage)</div>
+        <div class="cert-item"><i class="fa-solid fa-certificate"></i> Python Essentials 1 &mdash; Cisco Networking Academy</div>
+        <div class="cert-item"><i class="fa-solid fa-certificate"></i> SQL for Data Analysis &mdash; HackerRank</div>
+        <div class="cert-item"><i class="fa-solid fa-certificate"></i> Python Programming &mdash; SoloLearn</div>
+        <div class="cert-item"><i class="fa-solid fa-certificate"></i> Data Analytics &amp; BI Training (Python, MySQL, Excel, Power BI, ML)</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section section-contact">
+  <div class="hero-bg">
+    <span class="blob blob-1"></span>
+    <span class="blob blob-2"></span>
+  </div>
+  <div class="container contact-inner" data-reveal>
+    <p class="eyebrow">Get In Touch</p>
+    <h2 class="section-title">Let's build something with data &amp; AI</h2>
+    <p class="contact-sub">Open to data science, GenAI and automation opportunities &mdash; or just a good conversation about LLMs.</p>
+
+    <div class="contact-actions">
+      <a href="mailto:arivumathimr@gmail.com" class="btn btn-primary"><i class="fa-solid fa-envelope"></i> arivumathimr@gmail.com</a>
+      <a href="tel:+919791967390" class="btn btn-outline"><i class="fa-solid fa-phone"></i> +91 97919 67390</a>
+    </div>
+
+    <div class="social-row">
+      <a href="https://www.linkedin.com/in/arivumathimr" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+      <a href="https://skilledge-coaching.vercel.app/" target="_blank" rel="noopener" aria-label="SkillEdge Coaching"><i class="fa-solid fa-graduation-cap"></i></a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container footer-inner">
+    <span>&copy; <span id="year"></span> Arivumathi M R. All rights reserved.</span>
+    <span>Built with curiosity, data &amp; a little GenAI.</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
