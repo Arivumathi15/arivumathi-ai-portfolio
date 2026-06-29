@@ -27,6 +27,7 @@
       <li><a href="#experience" class="nav-link" data-section="experience">Experience</a></li>
       <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
       <li><a href="#education" class="nav-link" data-section="education">Education</a></li>
+      <li><a href="#certifications" class="nav-link" data-section="certifications">Certifications</a></li>
       <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
     </ul>
     <a href="assets/Arivumathi_MR_Resume.pdf" class="btn btn-sm btn-primary nav-cta" download>Resume <i class="fa-solid fa-arrow-down"></i></a>
@@ -349,7 +350,7 @@
 
 <!-- EDUCATION & CERTS -->
 <section id="education" class="section">
-  <div class="container edu-grid">
+  <div class="container edu-grid edu-overview">
     <div data-reveal>
       <p class="eyebrow">Academics</p>
       <h2 class="section-title">Education</h2>
@@ -363,8 +364,11 @@
         <p class="timeline-org">Bharathidasan University, Nagapattinam</p>
         <span class="timeline-date">2018 &mdash; 2021 &middot; 90%</span>
       </div>
+    </div>
 
-      <p class="eyebrow" style="margin-top:2.5rem">Recognition</p>
+    <div class="recognition-panel" data-reveal>
+      <p class="eyebrow">Recognition</p>
+      <h2 class="section-title">Achievements</h2>
       <ul class="achievement-list">
         <li><i class="fa-solid fa-award"></i> Outstanding Student Award (2023) for academic excellence &amp; project contributions</li>
         <li><i class="fa-solid fa-award"></i> IEEE project competition achievement certificate</li>
@@ -372,21 +376,102 @@
         <li><i class="fa-solid fa-award"></i> Published research paper, International Journal of Scientific Research in Engineering &amp; Management</li>
       </ul>
     </div>
+  </div>
+</section>
 
-    <div data-reveal>
-      <p class="eyebrow">Credentials</p>
-      <h2 class="section-title">Certifications</h2>
-      <div class="cert-list">
-        <div class="cert-item"><i class="fa-solid fa-certificate"></i> Google Data Analytics Professional Certificate &mdash; Coursera</div>
-        <div class="cert-item"><i class="fa-solid fa-certificate"></i> Power BI Job Simulation &mdash; PwC Switzerland (Forage)</div>
-        <div class="cert-item"><i class="fa-solid fa-certificate"></i> Python Essentials 1 &mdash; Cisco Networking Academy</div>
-        <div class="cert-item"><i class="fa-solid fa-certificate"></i> SQL for Data Analysis &mdash; HackerRank</div>
-        <div class="cert-item"><i class="fa-solid fa-certificate"></i> Python Programming &mdash; SoloLearn</div>
-        <div class="cert-item"><i class="fa-solid fa-certificate"></i> Data Analytics &amp; BI Training (Python, MySQL, Excel, Power BI, ML)</div>
+<!-- CERTIFICATIONS -->
+<section id="certifications" class="section section-certifications">
+  <div class="container certificate-showcase" data-reveal>
+    <div class="showcase-heading">
+      <div>
+        <p class="eyebrow">Verified Work</p>
+        <h2 class="section-title">Certificate Gallery</h2>
       </div>
+    </div>
+
+    <div class="certificate-stack" aria-label="Interactive certificate gallery">
+      <article class="certificate-card certificate-featured" style="--accent-img:#4f46e5">
+        <div class="certificate-preview" role="button" tabindex="0" data-cert-src="assets/certificates/Coursera-1.jpg" data-cert-title="Google Data Analytics Professional Certificate" aria-label="Show next certificate">
+          <img src="assets/certificates/Coursera-1.jpg" alt="Google Data Analytics Professional Certificate" loading="lazy">
+          <button class="certificate-expand" type="button" aria-label="Expand Google Data Analytics Professional Certificate"><i class="fa-solid fa-up-right-and-down-left-from-center"></i></button>
+        </div>
+        <div class="certificate-copy">
+          <span class="certificate-type">Professional Certificate</span>
+          <h3>Google Data Analytics</h3>
+          <p>Coursera credential covering analytics foundations, data preparation, visualization and insight communication.</p>
+        </div>
+      </article>
+
+      <article class="certificate-card" style="--accent-img:#d97706">
+        <div class="certificate-preview" role="button" tabindex="0" data-cert-src="assets/certificates/Pwc_powerbi.jpg" data-cert-title="PwC Switzerland Power BI Job Simulation" aria-label="Show next certificate">
+          <img src="assets/certificates/Pwc_powerbi.jpg" alt="PwC Switzerland Power BI Job Simulation certificate" loading="lazy">
+          <button class="certificate-expand" type="button" aria-label="Expand PwC Switzerland Power BI Job Simulation"><i class="fa-solid fa-up-right-and-down-left-from-center"></i></button>
+        </div>
+        <div class="certificate-copy">
+          <span class="certificate-type">Job Simulation</span>
+          <h3>PwC Power BI</h3>
+          <p>Forage job simulation focused on Power BI dashboards, analytics and business insight reporting.</p>
+        </div>
+      </article>
+
+      <article class="certificate-card" style="--accent-img:#0f766e">
+        <div class="certificate-preview" role="button" tabindex="0" data-cert-src="assets/certificates/Python_Essentials_1_Badge20231121-45-5m6hte_page-0001.jpg" data-cert-title="Python Essentials 1" aria-label="Show next certificate">
+          <img src="assets/certificates/Python_Essentials_1_Badge20231121-45-5m6hte_page-0001.jpg" alt="Python Essentials 1 certificate" loading="lazy">
+          <button class="certificate-expand" type="button" aria-label="Expand Python Essentials 1"><i class="fa-solid fa-up-right-and-down-left-from-center"></i></button>
+        </div>
+        <div class="certificate-copy">
+          <span class="certificate-type">Programming</span>
+          <h3>Python Essentials 1</h3>
+          <p>Cisco Networking Academy</p>
+        </div>
+      </article>
+
+      <article class="certificate-card" style="--accent-img:#c2410c">
+        <div class="certificate-preview" role="button" tabindex="0" data-cert-src="assets/certificates/d8f289c03bb544169f82ee76409fcbf8-0001.jpg" data-cert-title="Data Analytics and BI Training" aria-label="Show next certificate">
+          <img src="assets/certificates/d8f289c03bb544169f82ee76409fcbf8-0001.jpg" alt="Data analytics and business intelligence training certificate" loading="lazy">
+          <button class="certificate-expand" type="button" aria-label="Expand Data Analytics and BI Training"><i class="fa-solid fa-up-right-and-down-left-from-center"></i></button>
+        </div>
+        <div class="certificate-copy">
+          <span class="certificate-type">Training</span>
+          <h3>Data Analytics &amp; BI</h3>
+          <p>Python, MySQL, Excel, Power BI and ML</p>
+        </div>
+      </article>
+
+      <article class="certificate-card" style="--accent-img:#7c3aed">
+        <div class="certificate-preview" role="button" tabindex="0" data-cert-src="assets/certificates/capstone.jpeg" data-cert-title="Capstone Project Certificate" aria-label="Show next certificate">
+          <img src="assets/certificates/capstone.jpeg" alt="Capstone project certificate" loading="lazy">
+          <button class="certificate-expand" type="button" aria-label="Expand Capstone Project Certificate"><i class="fa-solid fa-up-right-and-down-left-from-center"></i></button>
+        </div>
+        <div class="certificate-copy">
+          <span class="certificate-type">Capstone</span>
+          <h3>Project Completion</h3>
+          <p>Applied data science work with a project-based evaluation.</p>
+        </div>
+      </article>
+
+      <article class="certificate-card certificate-wide" style="--accent-img:#b45309">
+        <div class="certificate-preview" role="button" tabindex="0" data-cert-src="assets/certificates/Arivumathi_paper_publication.png" data-cert-title="Research Paper Publication" aria-label="Show next certificate">
+          <img src="assets/certificates/Arivumathi_paper_publication.png" alt="Research paper publication certificate" loading="lazy">
+          <button class="certificate-expand" type="button" aria-label="Expand Research Paper Publication"><i class="fa-solid fa-up-right-and-down-left-from-center"></i></button>
+        </div>
+        <div class="certificate-copy">
+          <span class="certificate-type">Publication</span>
+          <h3>Research Paper Publication</h3>
+          <p>Published research recognition in scientific engineering and management.</p>
+        </div>
+      </article>
     </div>
   </div>
 </section>
+
+<div class="cert-lightbox" id="certLightbox" aria-hidden="true">
+  <button class="lightbox-close" type="button" aria-label="Close certificate preview"><i class="fa-solid fa-xmark"></i></button>
+  <figure class="lightbox-frame">
+    <img id="lightboxImage" src="" alt="">
+    <figcaption id="lightboxCaption"></figcaption>
+  </figure>
+</div>
 
 <!-- CONTACT -->
 <section id="contact" class="section section-contact">

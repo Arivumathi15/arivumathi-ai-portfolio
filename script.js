@@ -112,3 +112,113 @@ function animateCounter(el){
   }
   requestAnimationFrame(tick);
 }
+
+// ===================== CERTIFICATE GALLERY =====================
+const certificateCards = Array.from(document.querySelectorAll('.certificate-card'));
+let activeCertificate = 0;
+
+function getCertificatePlacement(position){
+  const placements = [
+    { x: 0, y: 0, scale: 1, rotate: 0, opacity: 1 },
+    { x: 165, y: 28, scale: 0.9, rotate: 4, opacity: 0.88 },
+    { x: 292, y: 62, scale: 0.8, rotate: 7, opacity: 0.58 },
+    { x: -285, y: 76, scale: 0.76, rotate: -8, opacity: 0.42 }
+  ];
+
+  if (position < placements.length) return placements[position];
+  return { x: -360, y: 96, scale: 0.7, rotate: -10, opacity: 0 };
+}
+
+function updateCertificateStack(){
+  const total = certificateCards.length;
+
+  certificateCards.forEach((card, index) => {
+    const position = (index - activeCertificate + total) % total;
+    const placement = getCertificatePlacement(position);
+    const preview = card.querySelector('.certificate-preview');
+    const expand = card.querySelector('.certificate-expand');
+
+    card.style.setProperty('--stack-pos', position);
+    card.style.setProperty('--stack-x', `${placement.x}px`);
+    card.style.setProperty('--stack-y', `${placement.y}px`);
+    card.style.setProperty('--stack-scale', placement.scale);
+    card.style.setProperty('--stack-rotate', `${placement.rotate}deg`);
+    card.style.setProperty('--stack-opacity', placement.opacity);
+    card.classList.toggle('is-front', position === 0);
+    card.setAttribute('aria-hidden', position > 3 ? 'true' : 'false');
+
+    if (preview){
+      preview.tabIndex = position === 0 ? 0 : -1;
+      preview.setAttribute('aria-label', position === 0 ? 'Show next certificate' : 'Certificate waiting in the stack');
+    }
+
+    if (expand){
+      expand.tabIndex = position === 0 ? 0 : -1;
+    }
+  });
+}
+
+function showNextCertificate(){
+  if (!certificateCards.length) return;
+  activeCertificate = (activeCertificate + 1) % certificateCards.length;
+  updateCertificateStack();
+}
+
+certificateCards.forEach((card) => {
+  const preview = card.querySelector('.certificate-preview');
+  const expand = card.querySelector('.certificate-expand');
+
+  if (preview){
+    preview.addEventListener('click', showNextCertificate);
+    preview.addEventListener('keydown', (event) => {
+      if (event.key === 'Enter' || event.key === ' '){
+        event.preventDefault();
+        showNextCertificate();
+      }
+    });
+  }
+
+  if (expand){
+    expand.addEventListener('click', (event) => {
+      event.stopPropagation();
+      openCertificatePreview(preview, expand);
+    });
+  }
+});
+
+updateCertificateStack();
+
+const certLightbox = document.getElementById('certLightbox');
+const lightboxImage = document.getElementById('lightboxImage');
+const lightboxCaption = document.getElementById('lightboxCaption');
+const lightboxClose = document.querySelector('.lightbox-close');
+let lastCertificateTrigger = null;
+
+function openCertificatePreview(preview, trigger = preview){
+  lastCertificateTrigger = trigger;
+  lightboxImage.src = preview.dataset.certSrc;
+  lightboxImage.alt = preview.querySelector('img')?.alt || preview.dataset.certTitle;
+  lightboxCaption.textContent = preview.dataset.certTitle;
+  certLightbox.classList.add('open');
+  certLightbox.setAttribute('aria-hidden', 'false');
+  document.body.style.overflow = 'hidden';
+  lightboxClose.focus();
+}
+
+function closeCertificatePreview(){
+  certLightbox.classList.remove('open');
+  certLightbox.setAttribute('aria-hidden', 'true');
+  document.body.style.overflow = '';
+  lightboxImage.src = '';
+  if (lastCertificateTrigger) lastCertificateTrigger.focus();
+}
+
+lightboxClose.addEventListener('click', closeCertificatePreview);
+certLightbox.addEventListener('click', (event) => {
+  if (event.target === certLightbox) closeCertificatePreview();
+});
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape' && certLightbox.classList.contains('open')){
+    closeCertificatePreview();
+  }
+});
